@@ -1,0 +1,87 @@
+body {
+   background-color: aliceblue; 
+}
+
+#Title {
+    font-family: 'Outfit' , sans-serif ;
+    text-align: center;
+}
+
+#Card {
+    border-radius: 5px;
+    background-color: darkseagreen;
+    box-shadow: 0 0 20px gray;
+    width: 80%;
+    max-width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+label {
+    font-family: 'Outfit' , sans-serif ;
+    color: #4D5D53;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    height: 90%;
+}
+
+input[type=submit] {
+    width: 150px;
+    height: 30px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Outfit' , sans-serif ;
+    font-weight: bold;
+    color: #4D5D53;
+}
+
+h1 {
+    color: #4D5D53;
+}
+
+input[type=submit]:hover {
+    background-color: seagreen;
+    color: white;
+    box-shadow: 0 0 20px seagreen;
+}
+
+.text-input, input[type=date], select {
+    font-family: 'Outfit' , sans-serif ;
+    font-size: 17px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 20px seagreen;
+}
+
+select {
+    outline: none;
+}
+
+input[type=date], select{
+    font-family: 'Outfit' , sans-serif ;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:hover {
+    box-shadow: 0 0 20px seagreen;
+}
+
+td {
+    padding: 0px 20px;
+}
+
+div {
+    text-align: center;
+}
