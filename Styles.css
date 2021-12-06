@@ -91,10 +91,6 @@ div {
     border-collapse: collapse;
 }
 
-#LeftDiv {
+#LeftDiv, #RightDiv {
     float: left;
-}
-
-#RightDiv {
-    border: ;
 }
