@@ -23,7 +23,7 @@ label {
     font-weight: bold;
 }
 
-table {
+#Formtable {
     width: 100%;
     height: 90%;
 }
@@ -84,4 +84,17 @@ td {
 
 div {
     text-align: center;
+}
+
+#DataTable {
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+#LeftDiv {
+    float: left;
+}
+
+#RightDiv {
+    border: ;
 }
