@@ -20,7 +20,7 @@ function myFunction() {
     var minDate = new Date;
     minDate.setFullYear(minDate.getFullYear() - 18);
     if (date > minDate) {
-        alert("Date must be on or before " + minDate);
+        alert("Date must be before " + minDate);
         return false;
     }
     var Department = document.getElementById("Department").value;
