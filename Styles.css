@@ -87,10 +87,10 @@ div {
 }
 
 #DataTable {
-    border-style: solid;
-    border-collapse: collapse;
+    font-family: 'Outfit' , sans-serif ;
 }
 
 #LeftDiv, #RightDiv {
+    margin-top: 50px;
     float: left;
 }
