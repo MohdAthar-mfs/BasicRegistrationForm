@@ -1,16 +1,13 @@
 var Table = document.getElementById("DataTable");
 
-$("#Form").on('submit', function (e) {
-    e.preventDefault();
-    myFunction();
-});
-
-function myFunction() {
+$("#SubmitButton").on('click', function (e) {
 
     if ($("#SubmitButton").val() == "Update") {
         updateRow();
-        return false;
-    }
+    } else validateAndAdd();
+});
+
+function validateAndAdd() {
     var FName = $("#FName").val();
     var LName = $("#LName").val();
     if ($("#Male").prop("checked") == true) {
@@ -63,11 +60,11 @@ function deleteRow(ctl) {
     $(ctl).parents("tr").remove();
 }
 
-var currentUser = null;
+var currentRow = null;
 
 function editRow(ctl) {
-    currentUser = $(ctl).parents("tr");
-    var cols = currentUser.children("td");
+    currentRow = $(ctl).parents("tr");
+    var cols = currentRow.children("td");
     $("#FName").val($(cols[0]).text());
     $("#LName").val($(cols[1]).text());
     $("#Gender").val($(cols[2]).text());
@@ -80,5 +77,6 @@ function editRow(ctl) {
 }
 
 function updateRow() {
-    alert("Inside updateRow");
+        $(currentRow).remove();
+        $(currentRow).after(validateAndAdd());
 }
