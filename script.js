@@ -83,4 +83,5 @@ function editRow(ctl) {
 function updateRow() {
     $(currentRow).remove();
     $(currentRow).after(validateAndAdd());
+    $("#SubmitButton").attr("value", "Submit");
 }
