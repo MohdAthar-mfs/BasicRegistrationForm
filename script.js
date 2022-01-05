@@ -67,16 +67,20 @@ function editRow(ctl) {
     var cols = currentRow.children("td");
     $("#FName").val($(cols[0]).text());
     $("#LName").val($(cols[1]).text());
-    $("#Gender").val($(cols[2]).text());
+    if ($(cols[2]).text() == "Male") {
+        $("#Male").prop("checked", true);
+    } else {
+        $("#Female").prop("checked", true);
+    }
     $("#DOB").val($(cols[3]).text());
     $("#Department").val($(cols[4]).text());
     $("#Email").val($(cols[5]).text());
     $("#Phone").val($(cols[6]).text());
 
-    $("#SubmitButton").attr("value","Update");
+    $("#SubmitButton").attr("value", "Update");
 }
 
 function updateRow() {
-        $(currentRow).remove();
-        $(currentRow).after(validateAndAdd());
+    $(currentRow).remove();
+    $(currentRow).after(validateAndAdd());
 }
